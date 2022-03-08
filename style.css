@@ -75,7 +75,7 @@ header
 .box1{
   width: 800px;
   height: 750px;
-  background-image: url("/images/Red-1.jpg");
+  background-image: url("/images/Redddd.jpg");
   position: absolute;
   bottom: -100%;
   left: 30%;
@@ -289,17 +289,19 @@ header
   
 }
 
-.services .card-container .card:hover .fa-compass-drafting {
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
-}
+
 .services .card-container .card:hover .fa-city {
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
+  -webkit-transform: translateY(-1.1rem);
+          transform: translateY(-1.1rem);
 }
+.services .card-container .card:hover .fa-compass-drafting {
+  -webkit-transform: translateY(-1.1rem);
+          transform: translateY(-1.1rem);
+}
+
 .services .card-container .card:hover .fa-comment-dots {
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
+  -webkit-transform: translateY(-1.1rem);
+          transform: translateY(-1.1rem);
 }
 
 
