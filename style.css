@@ -391,7 +391,7 @@ header
 }
 
 .footer .links .btn-footer {
-  margin: 0.2rem;
+  margin: 0.1rem;
   
 }
 
@@ -399,7 +399,7 @@ header
   display: inline-block;
   position: relative;
   margin-top: 15px;
-  padding: 10px 35px;
+  padding: 10px 30px;
   background:#d6151f;
   color: #fff;
   cursor: pointer;
