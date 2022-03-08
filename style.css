@@ -380,6 +380,7 @@ header
 }
 
 
+/*Footer*/
 
 .footer {
   width: 100%;
@@ -403,7 +404,7 @@ header
   background:#d6151f;
   color: #fff;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: capitalize;
   
 
