@@ -18,15 +18,64 @@ body{
 }
 
 
-#box1 ::after{
+#box1::after {
   content: '';
   position: absolute;
   width: 800px;
   height: 750px;
-  left: 0px;
+  left: -100px;
   z-index: -1;
+  
+}
+/*==========BOX4=====*/
+#box4 {
+  width: 800px;
+  height: 750px;
+  position: absolute;
+  bottom: 100%;
+  left:30%;
+  animation: anim 2s forwards, anim5 3s forwards 3s;
+  
 }
 
+#box4::after {
+  content: '';
+  position: absolute;
+  width: 800px;
+  height: 750px;
+  left: -100px;
+  z-index: -1;
+  
+}
+
+@keyframes anim{
+  from{
+
+     bottom:-100%;
+
+  }
+  to{
+
+     bottom:0;
+  }
+}
+
+@keyframes anim5{
+  from{
+
+    left: 30%;
+    width:530px;
+  
+    }
+    to{
+  
+    width:0px;
+    left: 100%;
+
+  }
+}
+/*==========END BOX 4=====*/
+/*==========BOX1=====*/
 @keyframes anim{
   from{
 
@@ -53,7 +102,7 @@ body{
 
   }
 }
-
+/*==========END BOX1=====*/
 #box2{
   width: auto;
   height: auto;
