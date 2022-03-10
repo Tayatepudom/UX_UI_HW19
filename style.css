@@ -21,6 +21,22 @@ h1{
   font-size: 72px;
 }
 
+h2{
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+  color: #222;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 25px;
+  color: #222;
+  text-transform: uppercase;
+}
+
 p{
   font-family: 'Lato', sans-serif;
 
@@ -29,7 +45,7 @@ p{
 
 
   
-/* Navigation bar */
+/* =========== Navigation bar =========== */
 .navbar{
   position: fixed;
   width: 100%;
@@ -43,23 +59,25 @@ p{
   margin-right: 0 !important;
 }
 .navbar-brand img {
-  padding-right: 15px;
-  width: 55px;
+  width: auto;
+  height: 55px;
 }
 .nav-item {
   margin: 0px 15px;
 }
-.nav-link{         /*--Nav Font Color--*/
-  color: #000;
+.nav-link{        
+  color: #222;
 }
-
-
 
 .navbar a:hover {
   color:#d6151f;
+  
 }
 
-/* HERO */
+
+
+
+/* =========== HERO =========== */
 header
 {
   height: 100vh;
@@ -146,26 +164,23 @@ header
 }
 
 
-/* Button */
+/* =========== Button =========== */
 
 
 .btn {
   display: inline-block;
   position: relative;
   margin-top: 15px;
-  padding: 10px 35px;
+  padding: 10px 30px;
   background:#d6151f;
   color: #fff;
   cursor: pointer;
   font-size: 20px;
   text-transform: capitalize;
-  -webkit-transition: .2s linear;
-  transition: .2s linear;
   animation: anim4 2s forwards 3s;
  
 
 }
-
 
 .btn:hover {
   background: #222;
@@ -181,15 +196,35 @@ header
   }
 }
 
+.btn2 {
+  display: inline-block;
+  position: relative;
+  margin-top: 15px;
+  padding: 10px 35px;
+  background:#d6151f;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+
+}
+
+.btn2:hover {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+}
 
 
 
-/*Rank*/
+
+/*=========== Ranking=========== */
 
 .rank .box-container {
   display: grid;
-  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
   
 }
 
@@ -216,22 +251,12 @@ header
   line-height: 1.5;
 }
 
-/* Services */
+/* =========== Services =========== */
 
 .services {
   background: #fff;
   margin: 100px;
-  
 
-}
-
-.services h2 {
- 
-  padding-bottom: 50px;
-  text-transform: uppercase;
-  font-size: 48px;
-  font-weight: 700;
-  color: #222;
 }
 
 .services h3 {
@@ -239,14 +264,6 @@ header
  
 }
 
-.services .card-container .card h3 {
-  font-size: 24px;
-  font-weight: 700;
-  padding-top: 25px;
-  color: #222;
-  text-transform: uppercase;
-
-}
 
 .services .card-container .card p {
   font-size: 16px;
@@ -257,9 +274,10 @@ header
 
 .services .card-container {
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 2rem;
+  -ms-grid-columns: (minmax(12rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  column-gap: 25px;
+  row-gap: 50px;
 }
 
 .services .card-container .card {
@@ -289,39 +307,26 @@ header
   
 }
 
-
-.services .card-container .card:hover .fa-city {
-  -webkit-transform: translateY(-1.1rem);
-          transform: translateY(-1.1rem);
-}
 .services .card-container .card:hover .fa-compass-drafting {
-  -webkit-transform: translateY(-1.1rem);
-          transform: translateY(-1.1rem);
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
 }
-
+.services .card-container .card:hover .fa-city {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
 .services .card-container .card:hover .fa-comment-dots {
-  -webkit-transform: translateY(-1.1rem);
-          transform: translateY(-1.1rem);
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
 }
 
 
 
-
-/* Project */
-.project {
-  background: #fff;
-  margin: 100px;
-
+/*=========== Project======= */
+#project{
+  margin: 90px;
+ 
 }
-
-.project h2 {
-
-  padding-bottom: 50px;
-  text-transform: uppercase;
-  font-size: 48px;
-  font-weight: 700;
-}
-
 
 .project-card {
   overflow: hidden;
@@ -346,27 +351,26 @@ header
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #d6151f5e;
+  background-color: #9c1e25c5;
   display: flex;
   align-items: flex-end;
   padding: 25px;
   opacity: 0;
 }
+
+.project-overlay h4 {
+  color: #fff;
+  font-size: 24px;
+  text-transform: capitalize;
+  line-height: 1.5rem;
+  
+}
+
 .project-overlay p{
   color: #fff;
   font-size: 12px;
   font-weight: 700;
-  text-transform: uppercase;
-
-  
-  
-}
-.project-overlay h3 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: capitalize;
-  line-height: 1.5rem;
+  text-transform: uppercase; 
   
 }
 
@@ -380,7 +384,71 @@ header
 }
 
 
-/*Footer*/
+/* =========== Culture =========== */
+
+.culture {
+  margin: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+
+}
+.culture-img{
+  width: auto;
+  padding-top: 25px;
+}
+
+
+.culture .text p{
+
+  font-size: 16px;
+  text-align: justify;
+ }
+
+
+
+ /* =========== Team =========== */
+ .team {
+  background: #fff;
+  margin: 100px;
+ }
+
+ .team .card-container {
+  border: none;
+  -webkit-box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+          box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  padding-bottom: 25px;
+          
+}
+.team .row{
+  row-gap: 50px;
+}
+.team h3{
+  text-align: left;
+  margin-left: 50px;
+  
+}
+
+.team .btn2{
+  margin-left: 50px;
+  
+}
+ 
+
+.team p {
+  text-align: left;
+  font-size: 16px;
+  color: #222;
+  line-height: 1.5;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+
+
+
+
+/*=====Footer=====*/
 
 .footer {
   width: 100%;
@@ -392,7 +460,7 @@ header
 }
 
 .footer .links .btn-footer {
-  margin: 0.1rem;
+  margin: 0.5rem;
   
 }
 
@@ -401,18 +469,32 @@ header
   position: relative;
   margin-top: 15px;
   padding: 10px 30px;
-  background:#d6151f;
   color: #fff;
   cursor: pointer;
   font-size: 16px;
   text-transform: capitalize;
-  
+  text-decoration: none;
 
 }
 
 
 .btn-footer:hover {
-  background: #222;
+  background: #d6151f;
   color: #fff;
   text-decoration: none;
 }
+
+
+
+.footer .socials{
+  color: #fff;
+  margin: 0.5rem;
+}
+
+.footer i{
+  display: inline-block;
+  position: relative;
+  margin-top: 15px;
+  padding: 10px 30px;
+}
+
