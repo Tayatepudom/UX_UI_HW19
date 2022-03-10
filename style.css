@@ -9,8 +9,8 @@ body{
   overflow: hidden;
 }
 #box1 {
-  width: 530px;
-  height: 625px;
+  width: 800px;
+  height: 750px;
   position: absolute;
   bottom: 100%;
   left:30%;
@@ -21,8 +21,8 @@ body{
 #box1 ::after{
   content: '';
   position: absolute;
-  width: 530px;
-  height: 625px;
+  width: 800px;
+  height: 750px;
   left: 0px;
   z-index: -1;
 }
