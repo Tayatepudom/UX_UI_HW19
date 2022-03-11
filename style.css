@@ -101,8 +101,8 @@ body{
   overflow: hidden;
 }
 #box1 {
-  width: 650px;
-  height: 825px;
+  width: 1400px;
+  height: 780px;
   position: absolute;
   bottom: 100%;
   left:30%;
@@ -114,7 +114,7 @@ body{
   content: '';
   position: absolute;
   width: 650px;
-  height: 800px;
+  height: 805px;
   left: -100px;
   z-index: -1;
   
@@ -147,8 +147,8 @@ body{
 }
 /*==========Draft====*/
 #box2 {
-  width: 650px;
-  height: 803px;
+  width: 1400px;
+  height: 780px;
   position: absolute;
   bottom: 100%;
   left:30%;
@@ -181,7 +181,7 @@ body{
 @keyframes anim5{
   from{
 
-    left: 40%;
+    left: 30%;
     width:530px;
   
     }
