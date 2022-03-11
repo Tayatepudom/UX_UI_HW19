@@ -145,14 +145,14 @@ body{
 
   }
 }
-/*==========Draft=====*/
+/*==========Draft====*/
 #box2 {
   width: 650px;
-  height: 800px;
+  height: 803px;
   position: absolute;
   bottom: 100%;
   left:30%;
-  animation: anim 2s forwards, anim5 3s forwards 3s;
+  animation: anim 2s forwards, anim5 3s forwards 2s;
   
 }
 
@@ -160,7 +160,7 @@ body{
   content: '';
   position: absolute;
   width: 650px;
-  height: 750px;
+  height: 800px;
   left: -100px;
   z-index: -1;
   
@@ -181,7 +181,7 @@ body{
 @keyframes anim5{
   from{
 
-    left: 30%;
+    left: 40%;
     width:530px;
   
     }
