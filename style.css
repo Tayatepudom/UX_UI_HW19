@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
+header
+{
+  height: 100vh;
+  
+}
 
 body {
    height: 100%;
@@ -17,9 +22,6 @@ h1,h2,h3,h4,h5,h6 {
    color: #222;
 }
 
-h1{
-  font-size: 72px;
-}
 
 h2{
   padding-bottom: 50px;
@@ -44,16 +46,29 @@ p{
 
 
 
-  
+
+body{
+  margin: 0px;
+  background: #fff;
+}
+
+
+
 /* =========== Navigation bar =========== */
+#box4{
+  overflow: hidden;
+}
+
 .navbar{
   position: fixed;
   width: 100%;
   height: 8%;
-  background-color: transparent !important;
+  background-color: #fff !important;
   background-size: cover;
   z-index: 10;
+  padding: 20px;
 }
+
 .navbar-nav {
   margin-left: auto;
   margin-right: 0 !important;
@@ -61,6 +76,7 @@ p{
 .navbar-brand img {
   width: auto;
   height: 55px;
+  margin-left: 30px;
 }
 .nav-item {
   margin: 0px 15px;
@@ -76,200 +92,156 @@ p{
 
 
 
-
-/* =========== HERO =========== */
-header
-{
-  height: 100vh;
-  
-}
+/* =========== Hero =========== */
 
 .hero{
   width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.box1{
-  width: 800px;
-  height: 750px;
-  background-image: url("/images/Redddd.jpg");
-  position: absolute;
-  bottom: -100%;
-  left: 30%;
-  animation: anim 2s forwards, anim2 3s forwards 3s;
-}
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
-
-
-body {
-   height: 100%;
-   width: 100%;
-   color: #222;
-   font-family: 'Lato', sans-serif;
-
-}
-
-
-h1,h2,h3,h4,h5,h6 {
-   letter-spacing: 0.5px;
-   text-transform: uppercase;
-   font-family: 'Lato', sans-serif;
-   color: #222;
-}
-
-h1{
-  font-size: 72px;
-}
-
-h2{
-  padding-bottom: 50px;
-  text-transform: uppercase;
-  font-size: 48px;
-  font-weight: 700;
-  color: #222;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 700;
-  padding-top: 25px;
-  color: #222;
-  text-transform: uppercase;
-}
-
-p{
-  font-family: 'Lato', sans-serif;
-
-}
-
-
-
-  
-/* =========== Navigation bar =========== */
-.navbar{
-  position: fixed;
-  width: 100%;
-  height: 8%;
-  background-color: transparent !important;
-  background-size: cover;
-  z-index: 10;
-}
-.navbar-nav {
-  margin-left: auto;
-  margin-right: 0 !important;
-}
-.navbar-brand img {
-  width: auto;
-  height: 55px;
-}
-.nav-item {
-  margin: 0px 15px;
-}
-.nav-link{        
-  color: #222;
-}
-
-.navbar a:hover {
-  color:#d6151f;
-  
-}
-
-
-
-
-/* =========== HERO =========== */
-header
-{
   height: 100vh;
-  
-}
-
-.hero{
-  width: 100%;
-  height: 100%;
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
-.box1{
-  width: 800px;
-  height: 750px;
-  background-image: url("/images/Redddd.jpg");
+#box1 {
+  width: 1400px;
+  height: 780px;
   position: absolute;
-  bottom: -100%;
-  left: 30%;
+  bottom: 100%;
+  left:30%;
   animation: anim 2s forwards, anim2 3s forwards 3s;
 }
 
-.box1::after{
+
+#box1::after {
   content: '';
   position: absolute;
-  width: 800px;
-  height: 750px;
-   background-image: url("/images/Red-1.jpg");
-   left: 0px;
-   z-index: -1;
+  width: 650px;
+  height: 805px;
+  left: -100px;
+  z-index: -1;
+  
 }
-
 @keyframes anim{
   from{
-    bottom: -100%;
+
+     bottom:-100%;
+
   }
   to{
-    bottom: 0%;
+
+     bottom:0;
   }
 }
 
 @keyframes anim2{
   from{
-    left: 30%;
-    width: 530px;
+
+  left: 30%;
+  width:530px;
+
   }
   to{
-    width: 0px;
-    left: 50%;
+
+  width:0px;
+  left: 40%;
+
+  }
+}
+/*==========Draft====*/
+#box2 {
+  width: 1400px;
+  height: 780px;
+  position: absolute;
+  bottom: 100%;
+  left:30%;
+  animation: anim 2s forwards, anim5 3s forwards 2s;
+  
+}
+
+#box2::after {
+  content: '';
+  position: absolute;
+  width: 650px;
+  height: 800px;
+  left: -100px;
+  z-index: -1;
+  
+}
+
+@keyframes anim{
+  from{
+
+     bottom:-100%;
+
+  }
+  to{
+
+     bottom:0;
   }
 }
 
-.box2{
-  width:auto;
+@keyframes anim5{
+  from{
+
+    left: 30%;
+    width:530px;
+  
+    }
+    to{
+  
+    width:0px;
+    left: 100%;
+
+  }
+}
+/*==========END BOX 4=====*/
+
+/*==========TEXT=====*/
+#box3{
+  width: auto;
   height: auto;
+  color: #222;
   font-family: 'Lato', sans-serif;
+  font-size: 84px;
+  font-weight: 500;
   text-transform: uppercase;
-  line-height: 1.5rem;
+  line-height: 1.2;
   position: absolute;
-  top: 200px;
+  top: 250px;
   left: 100px;
   overflow: hidden;
+
 }
-.box2 h1{
+
+
+.text{
   position: relative;
-  left:-100%;
+  left: 100%;
   animation: anim3 2s forwards 3s;
-  color: #222;
-
 }
 
-.box2 h1 span{
+@keyframes anim3{
+  from{
+     left: -100%;
+  }
+  to{
+     left: 0%;
+  }
+}
+
+.text span{
   color: #d6151f;
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 105%;
 }
-@keyframes anim3{
-  from{
-    left: -100%;
-  }
-  to{
-    left: 0%;
-  }
-}
+
 
 
 /* =========== Button =========== */
 
 
 .btn {
-  display: inline-block;
+  display: flex;
+  align-items: flex-start;
+  width: 165px;
   position: relative;
   margin-top: 15px;
   padding: 10px 30px;
@@ -283,6 +255,7 @@ header
 
 }
 
+
 .btn:hover {
   background: #222;
   color: #fff;
@@ -295,26 +268,6 @@ header
   to{
     left: 0%;
   }
-}
-
-.btn2 {
-  display: inline-block;
-  position: relative;
-  margin-top: 15px;
-  padding: 10px 35px;
-  background:#d6151f;
-  color: #fff;
-  cursor: pointer;
-  font-size: 20px;
-  text-transform: capitalize;
-  text-decoration: none;
-
-}
-
-.btn2:hover {
-  background: #222;
-  color: #fff;
-  text-decoration: none;
 }
 
 
@@ -425,7 +378,7 @@ header
 
 /*=========== Project======= */
 #project{
-  margin: 90px;
+  margin: 100px;
  
 }
 
@@ -437,7 +390,7 @@ header
 
 .project-card img{
   width: 100%;
-  height: 100%;
+  height: fit-content;
   
 }
 
@@ -452,7 +405,7 @@ header
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #9c1e25c5;
+  background-color: #c2242cc5;
   display: flex;
   align-items: flex-end;
   padding: 25px;
@@ -463,7 +416,7 @@ header
   color: #fff;
   font-size: 24px;
   text-transform: capitalize;
-  line-height: 1.5rem;
+  
   
 }
 
@@ -499,12 +452,21 @@ header
   padding-top: 25px;
 }
 
+.culture h2{
+  padding: 0%;
+}
 
 .culture .text p{
-
   font-size: 16px;
   text-align: justify;
+  padding-top: 25px;
+  padding-bottom: 25px;
  }
+
+ .culture .btn{
+  animation: none;
+  
+}
 
 
 
@@ -512,6 +474,7 @@ header
  .team {
   background: #fff;
   margin: 100px;
+  text-align: center;
  }
 
  .team .card-container {
@@ -525,19 +488,28 @@ header
   row-gap: 50px;
 }
 .team h3{
-  text-align: left;
-  margin-left: 50px;
+  text-align: center;
+  margin-bottom: 15px;
   
 }
 
-.team .btn2{
-  margin-left: 50px;
+.team .btn{
   
+  animation: none;
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+  padding: 8px;
+  width: 8rem;
+  animation: none;
+
 }
+
+
  
 
 .team p {
-  text-align: left;
+  text-align: center;
   font-size: 16px;
   color: #222;
   line-height: 1.5;
@@ -550,26 +522,41 @@ header
 
 
 /*=====Footer=====*/
-
-.footer {
-  width: 100%;
-  height: 100%;
-  margin-top: 100px;
-  padding: 100px;
-  text-align: center;
+footer {
+  position: relative;
+  padding: 50px 0;
   background-color: #000;
 }
-
-.footer .links .btn-footer {
-  margin: 0.5rem;
-  
+.footer-inner
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+footer ul
+{
+    margin-left: 0;
+}
+footer ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
 
 .btn-footer {
   display: inline-block;
   position: relative;
-  margin-top: 15px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   color: #fff;
   cursor: pointer;
   font-size: 16px;
@@ -585,20 +572,58 @@ header
   text-decoration: none;
 }
 
-
-
-.footer .socials{
+/*Newsletters*/
+.newsletter{
+  background-color: #F8F1EF;
+  padding: 30px;
+}
+.newsletter .container{
+  background-size: cover;
+  padding-bottom: 25px;
+  text-align: center;
   color: #fff;
-  margin: 0.5rem;
-}
-
-.footer i{
-  display: inline-block;
-  position: relative;
-  margin-top: 15px;
-  padding: 10px 30px;
 }
 
 
+.container p {
+  max-width: 900px;
+  margin: 20px auto;
+  font-size: 16px;
+  font-weight: 300;
+  color: #222;
+  
+}
+
+.email-box{
+  height: 35px;
+  justify-content: center;
+  display: inline-flex;
+}
+.email-box i{
+  background: #d6151f;
+  width: 40px;
+  line-height: 35px;
+}
+.tbox,.btn-news{
+  border: none;
+  outline: none;
+}
+.tbox{
+  width: 0px;
+  transition: 0.6s;
+}
+.email-box:hover > .tbox,.tbox:focus{
+  width: 260px;
+  padding: 0 20px;
+}
+ .btn-news{
+  background: #d6151f;
+  color: white;
+  padding: 0px 35px;
+  cursor: pointer;
+  animation: none;
+  font-size: 16px;
+  animation: none;
+}
 
 
